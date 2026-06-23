@@ -143,9 +143,9 @@ The autoencoder bottleneck size is tuned by training five models (N = 2, 3, 4, 5
 
 | Model | ROC-AUC | F1 | Recall | Precision |
 |---|---|---|---|---|
-| Isolation Forest (baseline) | ~0.73 | ~0.55 | ~0.60 | ~0.51 |
-| PCA (baseline) | ~0.85 | ~0.72 | ~0.68 | ~0.77 |
-| **Autoencoder (method)** | **~0.93** | **~0.80** | **~0.83** | **~0.78** |
+| Isolation Forest (baseline) | ~0.73 | ~0.43 | ~0.34 | ~0.60 |
+| PCA (baseline) | ~0.87 | ~0.61 | ~0.61 | ~0.61 |
+| **Autoencoder (method)** | **~0.99** | **~0.92** | **~0.90** | **~0.94** |
 | Random Forest — paper † | — | 0.748 | 0.748 | 0.748 |
 
 † Original paper result uses supervised classification with full access to labeled fault data during training.
