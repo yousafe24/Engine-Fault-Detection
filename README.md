@@ -247,3 +247,11 @@ PCA and the autoencoder follow identical pipelines — compress, reconstruct, me
 ```
 
 
+
+https://github.com/user-attachments/assets/093555b0-c8fa-4a35-abd6-a9863367de78
+
+
+
+
+
+
