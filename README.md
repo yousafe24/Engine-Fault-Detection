@@ -246,10 +246,4 @@ PCA and the autoencoder follow identical pipelines — compress, reconstruct, me
 }
 ```
 
----
 
-## Course Context
-
-MSc Applied Image and Signal Processing — Machine Learning Course  
-FH Salzburg, Austria — Summer Semester 2026
-Sonnet 4.6 LowClaude is AI and 
