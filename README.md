@@ -135,7 +135,7 @@ Rather than hardcoding a threshold (e.g. mean + 1σ), all percentile thresholds 
 The autoencoder bottleneck size is tuned by training five models (N = 2, 3, 4, 5, 6 neurons) and selecting the one with the lowest validation reconstruction loss.
 
 **5 — Early stopping**  
-`patience=30`, `min_delta=1e-4`. The model exhibited late convergence beyond epoch 200, making a fixed epoch budget insufficient. Early stopping found the right stopping point automatically.
+`patience=30`, `min_delta=1e-4`. The model exhibited late convergence beyond epoch 500, making a fixed epoch budget insufficient. Early stopping found the right stopping point automatically.
 
 ---
 
@@ -208,7 +208,7 @@ Using all fault samples creates a test set that is 93% faulty — not representa
 The standard approach of hardcoding mean + one standard deviation is arbitrary. Sweeping all percentile thresholds and selecting by F1 produces a data-driven, justifiable decision boundary.
 
 **Late convergence is real.**  
-The autoencoder continued improving beyond 200 epochs before converging. A fixed epoch budget would have stopped training too early. Early stopping with a patience parameter resolved this automatically.
+The autoencoder continued improving beyond 500 epochs before converging. A fixed epoch budget would have stopped training too early. Early stopping with a patience parameter resolved this automatically.
 
 **PCA as the direct baseline.**  
 PCA and the autoencoder follow identical pipelines — compress, reconstruct, measure error. The only difference is linearity. This makes the comparison clean and the research question answerable: the AUC gap between PCA and the autoencoder is attributable entirely to the non-linearity of the learned representation.
